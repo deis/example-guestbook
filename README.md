@@ -1,4 +1,7 @@
+
 ## Guestbook Example
+
+[![Docker Repository on Quay](https://quay.io/repository/deis/example-guestbook/status "Docker Repository on Quay")](https://quay.io/repository/deis/example-guestbook)
 
 This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh) and [Deis Workflow PaaS](https://deis.com/).
 
