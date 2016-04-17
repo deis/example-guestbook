@@ -49,9 +49,7 @@ $ deis create guestbook
 
 3) Set env vars so the App knows where to connect to redis cluster:
 ```
-$ deis config:set  GET_HOSTS_FROM=env -a guestbook
-$ deis config:set  REDIS_MASTER_SERVICE_HOST=redis-master.default -a guestbook
-$ deis config:set  REDIS_SLAVE_SERVICE_HOST=redis-slave.default -a guestbook
+$ deis config:set GET_HOSTS_FROM=env REDIS_MASTER_SERVICE_HOST=redis-master.default REDIS_SLAVE_SERVICE_HOST=redis-slave.default -a guestbook
 ```
 
 4) Push to remote git repo:
