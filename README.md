@@ -16,9 +16,6 @@ The web frontend interacts with the redis master via javascript redis API calls.
 
 This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh) and [Deis Workflow Paas](https://github.com/deis/workflow).
 
-
-### Install
-
 #### Backend install with the Helm
 
 1) We add the remote repo to Helm:
