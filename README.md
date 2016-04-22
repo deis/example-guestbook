@@ -14,7 +14,7 @@ The web frontend interacts with the Redis `master` API via JavaScript calls.
 
 ### Prerequisites
 
-This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh) and [Deis Workflow Paas](https://github.com/deis/workflow).
+This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh) and [Deis Workflow](https://github.com/deis/workflow).
 
 #### Backend install with the Helm
 
