@@ -3,14 +3,14 @@
 
 [![Docker Repository on Quay](https://quay.io/repository/deis/example-guestbook/status "Docker Repository on Quay")](https://quay.io/repository/deis/example-guestbook)
 
-This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh) and [Deis Workflow PaaS](https://deis.com/).
+This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh) and [Deis Workflow](https://deis.com/).
 
 The example consists of:
 
-- A web frontend which is installed as a Deis Workflow PaaS App
-- And a back-end [redis](http://redis.io/) master (for storage) with a replicated set of redis 'slaves'.
+- A web frontend which is installed as a Deis Workflow
+- And a back-end [Redis](http://redis.io/) `master` (for storage) with a replicated set of Redis `slaves`
 
-The web frontend interacts with the redis master via javascript redis API calls.
+The web frontend interacts with the Redis `master` API via JavaScript calls.
 
 ### Prerequisites
 
