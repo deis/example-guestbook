@@ -3,7 +3,7 @@
 
 [![Docker Repository on Quay](https://quay.io/repository/deis/example-guestbook/status "Docker Repository on Quay")](https://quay.io/repository/deis/example-guestbook)
 
-This example shows how to build a simple, multi-tier web application using [Helm](https://helm.sh) and [Deis Workflow](https://deis.com/).
+This example shows how to build a simple, multi-tier web application using [Helm Classic](https://helm.sh) and [Deis Workflow](https://deis.com/workflow/).
 
 The example consists of:
 
@@ -14,21 +14,21 @@ The web frontend interacts with the Redis `master` API via JavaScript calls.
 
 ### Prerequisites
 
-This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm](https://helm.sh) and [Deis Workflow](https://github.com/deis/workflow).
+This example requires a running [Kubernetes](https://kubernetes.io) cluster and you have installed [Helm Classic](https://helm.sh) and [Deis Workflow](https://deis.com/workflow/).
 
-#### Backend install with the Helm
+#### Backend install with the Helm Classic
 
 1) We add the remote repo to Helm:
 ```
-$ helm up
-$ helm repo add demo-charts https://github.com/deis/demo-charts
-$ helm up
+$ helmc up
+$ helmc repo add demo-charts https://github.com/deis/demo-charts
+$ helmc up
 ```
 
 2) We install our back-end chart
 ```
-$ helm fetch demo-charts/redis-guestbook
-$ helm install redis-guestbook
+$ helmc fetch demo-charts/redis-guestbook
+$ helmc install redis-guestbook
 ```
 
 #### Front-end install with deis cli
